@@ -1,0 +1,130 @@
+03/07/2024 02:37:59 AM : DEBUG : Selenium Manager binary found at: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+03/07/2024 02:37:59 AM : DEBUG : Executing process: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+03/07/2024 02:39:05 AM : DEBUG : Found chromedriver 121.0.6167.184 in PATH: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe
+03/07/2024 02:39:05 AM : DEBUG : chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+03/07/2024 02:39:05 AM : DEBUG : Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+03/07/2024 02:39:05 AM : DEBUG : Output: "\r\r\n\r\r\nVersion=121.0.6167.185\r\r\n\r\r\n\r\r\n\r"
+03/07/2024 02:39:05 AM : DEBUG : Detected browser: chrome 121.0.6167.185
+03/07/2024 02:39:05 AM : DEBUG : Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+03/07/2024 02:39:05 AM : DEBUG : Required driver: chromedriver 121.0.6167.184
+03/07/2024 02:39:05 AM : DEBUG : Driver path: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe
+03/07/2024 02:39:05 AM : DEBUG : Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+03/07/2024 02:39:05 AM : DEBUG : Using driver at: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe
+03/07/2024 02:39:05 AM : DEBUG : Started executable: `C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe` in a child process with pid: 21376 using 0 to output -3
+03/07/2024 02:39:07 AM : DEBUG : POST http://localhost:61934/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+03/07/2024 02:39:07 AM : DEBUG : Starting new HTTP connection (1): localhost:61934
+03/07/2024 02:39:15 AM : DEBUG : http://localhost:61934 "POST /session HTTP/1.1" 200 883
+03/07/2024 02:39:15 AM : DEBUG : Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"121.0.6167.185","chrome":{"chromedriverVersion":"121.0.6167.184 (057a8ae7deb3374d0f1b04b36304d236f0136188-refs/branch-heads/6167@{#1818})","userDataDir":"C:\\Users\\Acer\\AppData\\Local\\Temp\\scoped_dir21376_1565756505"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:61974"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"3dd3f41926e8e8dc026c6cfe2d18ce8a"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:39:15 AM : DEBUG : Finished Request
+03/07/2024 02:39:15 AM : DEBUG : POST http://localhost:61934/session/3dd3f41926e8e8dc026c6cfe2d18ce8a/window/maximize {}
+03/07/2024 02:39:16 AM : DEBUG : http://localhost:61934 "POST /session/3dd3f41926e8e8dc026c6cfe2d18ce8a/window/maximize HTTP/1.1" 200 51
+03/07/2024 02:39:16 AM : DEBUG : Remote response: status=200 | data={"value":{"height":840,"width":1552,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:39:16 AM : DEBUG : Finished Request
+03/07/2024 02:39:16 AM : INFO : *********  Test_001_LoginMercury  *************************
+03/07/2024 02:39:16 AM : INFO : *********  Verifying HomePage Title of Mercury Tours  *****************
+03/07/2024 02:39:16 AM : DEBUG : POST http://localhost:61934/session/3dd3f41926e8e8dc026c6cfe2d18ce8a/url {'url': 'https://demo.guru99.com/test/newtours/index.php'}
+03/07/2024 02:40:03 AM : DEBUG : http://localhost:61934 "POST /session/3dd3f41926e8e8dc026c6cfe2d18ce8a/url HTTP/1.1" 200 14
+03/07/2024 02:40:03 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:40:03 AM : DEBUG : Finished Request
+03/07/2024 02:40:03 AM : DEBUG : GET http://localhost:61934/session/3dd3f41926e8e8dc026c6cfe2d18ce8a/title {}
+03/07/2024 02:40:06 AM : DEBUG : http://localhost:61934 "GET /session/3dd3f41926e8e8dc026c6cfe2d18ce8a/title HTTP/1.1" 200 34
+03/07/2024 02:40:06 AM : DEBUG : Remote response: status=200 | data={"value":"Welcome: Mercury Tours"} | headers=HTTPHeaderDict({'Content-Length': '34', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:40:06 AM : DEBUG : Finished Request
+03/07/2024 02:40:06 AM : DEBUG : DELETE http://localhost:61934/session/3dd3f41926e8e8dc026c6cfe2d18ce8a/window {}
+03/07/2024 02:40:17 AM : DEBUG : http://localhost:61934 "DELETE /session/3dd3f41926e8e8dc026c6cfe2d18ce8a/window HTTP/1.1" 200 12
+03/07/2024 02:40:17 AM : DEBUG : Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:40:17 AM : DEBUG : Finished Request
+03/07/2024 02:40:17 AM : INFO : ************  HomePageTitle Test is Passed  ********************
+03/07/2024 02:40:17 AM : DEBUG : Selenium Manager binary found at: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+03/07/2024 02:40:17 AM : DEBUG : Executing process: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+03/07/2024 02:40:22 AM : DEBUG : Found chromedriver 121.0.6167.184 in PATH: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe
+03/07/2024 02:40:22 AM : DEBUG : chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+03/07/2024 02:40:22 AM : DEBUG : Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+03/07/2024 02:40:22 AM : DEBUG : Output: "\r\r\n\r\r\nVersion=121.0.6167.185\r\r\n\r\r\n\r\r\n\r"
+03/07/2024 02:40:22 AM : DEBUG : Detected browser: chrome 121.0.6167.185
+03/07/2024 02:40:22 AM : DEBUG : Required driver: chromedriver 121.0.6167.184
+03/07/2024 02:40:22 AM : DEBUG : Driver path: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe
+03/07/2024 02:40:22 AM : DEBUG : Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+03/07/2024 02:40:22 AM : DEBUG : Using driver at: C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe
+03/07/2024 02:40:22 AM : DEBUG : Started executable: `C:\Users\Acer\AppData\Local\Programs\Python\Python311\Scripts\chromedriver.exe` in a child process with pid: 13648 using 0 to output -3
+03/07/2024 02:40:22 AM : DEBUG : POST http://localhost:62067/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+03/07/2024 02:40:22 AM : DEBUG : Starting new HTTP connection (1): localhost:62067
+03/07/2024 02:40:24 AM : DEBUG : http://localhost:62067 "POST /session HTTP/1.1" 200 883
+03/07/2024 02:40:24 AM : DEBUG : Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"121.0.6167.185","chrome":{"chromedriverVersion":"121.0.6167.184 (057a8ae7deb3374d0f1b04b36304d236f0136188-refs/branch-heads/6167@{#1818})","userDataDir":"C:\\Users\\Acer\\AppData\\Local\\Temp\\scoped_dir13648_1890268140"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62074"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d9ef4551afe3756766026fe05d678ad7"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:40:24 AM : DEBUG : Finished Request
+03/07/2024 02:40:24 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/window/maximize {}
+03/07/2024 02:40:25 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/window/maximize HTTP/1.1" 200 51
+03/07/2024 02:40:25 AM : DEBUG : Remote response: status=200 | data={"value":{"height":840,"width":1552,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:40:25 AM : DEBUG : Finished Request
+03/07/2024 02:40:25 AM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 02:40:25 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/url {'url': 'https://demo.guru99.com/test/newtours/index.php'}
+03/07/2024 02:41:02 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/url HTTP/1.1" 200 14
+03/07/2024 02:41:02 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:02 AM : DEBUG : Finished Request
+03/07/2024 02:41:02 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element {'using': 'css selector', 'value': '[name="userName"]'}
+03/07/2024 02:41:02 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element HTTP/1.1" 200 95
+03/07/2024 02:41:02 AM : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"CB6DCC659D4D700EA2BCB585BCDB4328_element_34"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:02 AM : DEBUG : Finished Request
+03/07/2024 02:41:02 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_34/clear {}
+03/07/2024 02:41:02 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_34/clear HTTP/1.1" 200 14
+03/07/2024 02:41:02 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:02 AM : DEBUG : Finished Request
+03/07/2024 02:41:02 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element {'using': 'css selector', 'value': '[name="userName"]'}
+03/07/2024 02:41:02 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element HTTP/1.1" 200 95
+03/07/2024 02:41:02 AM : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"CB6DCC659D4D700EA2BCB585BCDB4328_element_34"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:02 AM : DEBUG : Finished Request
+03/07/2024 02:41:02 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_34/value {'text': 'mercury', 'value': ['m', 'e', 'r', 'c', 'u', 'r', 'y']}
+03/07/2024 02:41:02 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_34/value HTTP/1.1" 200 14
+03/07/2024 02:41:02 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:02 AM : DEBUG : Finished Request
+03/07/2024 02:41:02 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element {'using': 'css selector', 'value': '[name="password"]'}
+03/07/2024 02:41:02 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element HTTP/1.1" 200 95
+03/07/2024 02:41:02 AM : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"CB6DCC659D4D700EA2BCB585BCDB4328_element_35"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:02 AM : DEBUG : Finished Request
+03/07/2024 02:41:02 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_35/clear {}
+03/07/2024 02:41:03 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_35/clear HTTP/1.1" 200 14
+03/07/2024 02:41:03 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:03 AM : DEBUG : Finished Request
+03/07/2024 02:41:03 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element {'using': 'css selector', 'value': '[name="password"]'}
+03/07/2024 02:41:03 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element HTTP/1.1" 200 95
+03/07/2024 02:41:03 AM : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"CB6DCC659D4D700EA2BCB585BCDB4328_element_35"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:03 AM : DEBUG : Finished Request
+03/07/2024 02:41:03 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_35/value {'text': 'mercury', 'value': ['m', 'e', 'r', 'c', 'u', 'r', 'y']}
+03/07/2024 02:41:03 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_35/value HTTP/1.1" 200 14
+03/07/2024 02:41:03 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:03 AM : DEBUG : Finished Request
+03/07/2024 02:41:03 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element {'using': 'css selector', 'value': '[name="submit"]'}
+03/07/2024 02:41:03 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element HTTP/1.1" 200 95
+03/07/2024 02:41:04 AM : DEBUG : Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"CB6DCC659D4D700EA2BCB585BCDB4328_element_37"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:04 AM : DEBUG : Finished Request
+03/07/2024 02:41:04 AM : DEBUG : POST http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_37/click {}
+03/07/2024 02:41:06 AM : DEBUG : http://localhost:62067 "POST /session/d9ef4551afe3756766026fe05d678ad7/element/CB6DCC659D4D700EA2BCB585BCDB4328_element_37/click HTTP/1.1" 200 14
+03/07/2024 02:41:06 AM : DEBUG : Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:06 AM : DEBUG : Finished Request
+03/07/2024 02:41:06 AM : DEBUG : GET http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/title {}
+03/07/2024 02:41:06 AM : DEBUG : http://localhost:62067 "GET /session/d9ef4551afe3756766026fe05d678ad7/title HTTP/1.1" 200 32
+03/07/2024 02:41:06 AM : DEBUG : Remote response: status=200 | data={"value":"Login: Mercury Tours"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:06 AM : DEBUG : Finished Request
+03/07/2024 02:41:06 AM : DEBUG : DELETE http://localhost:62067/session/d9ef4551afe3756766026fe05d678ad7/window {}
+03/07/2024 02:41:07 AM : DEBUG : http://localhost:62067 "DELETE /session/d9ef4551afe3756766026fe05d678ad7/window HTTP/1.1" 200 12
+03/07/2024 02:41:07 AM : DEBUG : Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/07/2024 02:41:07 AM : DEBUG : Finished Request
+03/07/2024 02:41:07 AM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
+03/07/2024 04:10:59 PM : INFO : *********  Test_001_LoginMercury  *************************
+03/07/2024 04:10:59 PM : INFO : *********  Verifying HomePage Title of Mercury Tours  *****************
+03/07/2024 04:11:06 PM : INFO : ************  HomePageTitle Test is Passed  ********************
+03/07/2024 04:11:12 PM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 04:11:40 PM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
+03/07/2024 04:57:09 PM : INFO : *********  Test_001_LoginMercury  *************************
+03/07/2024 04:57:09 PM : INFO : *********  Verifying HomePage Title of Mercury Tours  *****************
+03/07/2024 04:57:41 PM : INFO : ************  HomePageTitle Test is Passed  ********************
+03/07/2024 04:57:46 PM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 04:58:22 PM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
+03/07/2024 05:09:51 PM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 05:10:38 PM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
+03/07/2024 05:16:38 PM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 05:17:12 PM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
+03/07/2024 05:18:35 PM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 05:18:56 PM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
+03/07/2024 05:53:09 PM : INFO : ***************  Verifying Mercury Tours Login ********************
+03/07/2024 05:53:29 PM : INFO : *************************  Mercury Tours Login Test is Passed  ********************
