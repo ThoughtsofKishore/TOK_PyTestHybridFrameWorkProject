@@ -15,7 +15,8 @@ def setup(browser):
         driver = webdriver.Chrome()
         driver.maximize_window()
         print("Launching Default Browser")
-    return driver
+    yield driver
+    driver.close()
 
 
 def pytest_addoption(parser):

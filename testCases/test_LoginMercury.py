@@ -20,12 +20,12 @@ class Test_001_LoginMercury:
         act_title = self.driver.title
 
         if act_title == 'Welcome: Mercury Tours':
-            self.driver.close()
+            # self.driver.close()
             self.loggerObj.info("************  HomePageTitle Test is Passed  ********************")
             assert True
         else:
             self.driver.save_screenshot('./Screenshots/homePageTitleError.png')
-            self.driver.close()
+            # self.driver.close()
             self.loggerObj.error("***********  HomePageTitle Test is Failed  ********************")
             assert False
 
@@ -42,12 +42,12 @@ class Test_001_LoginMercury:
         act_title = self.driver.title
 
         if act_title == 'Login: Mercury Tours':
-            self.driver.close()
+            # self.driver.close()
             self.loggerObj.info("*************************  Mercury Tours Login Test is Passed  ********************")
             assert True
         else:
             self.driver.save_screenshot('./Screenshots/loginMercuryError.png')
-            self.driver.close()
+            # self.driver.close()
             self.loggerObj.error("************************* Mercury Tours Login Test is Failed  ********************")
             assert False
 
