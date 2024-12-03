@@ -9,7 +9,6 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
 
-
     def set_username(self, username):
         self.driver.find_element(By.NAME, self.txt_username_name).clear()
         self.driver.find_element(By.NAME,self.txt_username_name).send_keys(username)
